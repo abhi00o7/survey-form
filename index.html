@@ -9,6 +9,16 @@
 </head>
 
 <body>
+    <!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
     <div class="body">
 
         <div id="title">
@@ -19,38 +29,76 @@
         </div>
         <div id="form">
             <form action="#" id="survey-form">
-                <label for="name">Name</label><br>
+                <label for="name-label">Name</label><br>
                 <input type="text" id="name" placeholder="Enter Your Name"><br>
-                <label for="Email">Email</label><br>
+                <label for="email-label">Email</label><br>
                 <input type="email" id="email" placeholder="Enter Your Email"><br>
-                <label for="age">Age(Optional)</label><br>
-                <input type="number" id="age" placeholder="Enter Your age here"><br>
-                <label for="dropdown">Which option best describes your current role?</label><br>
+                <label for="age-label">Age(Optional)</label><br>
+                <input type="number-label" id="age" placeholder="Enter Your age here" min="11" max="99"><br>
+                <label for="dropdown-label">Which option best describes your current role?</label><br>
                 <select name="role" id="role">
-                    <option value="">Select current role</option>
+                    <option>Select current role</option>
                     <option value="student">Student</option>
                     <option value="fullTimeJob">Full time job</option>
                     <option value="fullTimeLearner">Full time Learner</option>
                     <option value="preferNotToSay">Prefer not to say</option>
                     <option value="other">Other...</option>
                 </select><br>
+                <!--       <select name="recommend" id="id"></select> -->
                 <label for="recommend">Would you recommend freeCodeCamp to a friend?</label><br>
-                <input type="radio" id="recommend" name="definitely" value="definitely">
+                <input type="radio" id="recommend" name="recommend" value="definitely">
                 <label for="definitely">Definitely</label>
-                <input type="radio" id="recommend" name="maybe" value="maybe">
+                <input type="radio" id="recommend" name="recommend" value="maybe">
                 <label for="Maybe">Maybe</label>
-                <input type="radio" id="recommend" name="notSure" value="notSure">
+                <input type="radio" id="recommend" name="recommend" value="notSure">
                 <label for="notSure">Not Sure</label><br>
                 <label for="feature">What is your favorite feature of freeCodeCamp?</label><br>
                 <select name="feature" id="feature">
-                    <option value="">Select an option</option>
+                    <option>Select an option</option>
                     <option value="challenges">Challenges</option>
                     <option value="projects">Projects</option>
                     <option value="community">Community</option>
                     <option value="openSource">Open Source</option>
                 </select><br>
-                <label for="improvement">What would you like to see improved? (Check all that apply)
-                </label>
+                <!--      What would you like to see improved? (Check all that apply)
+
+          Front-end Projects
+          Back-end Projects
+          Data Visualization
+          Challenges
+          Open Source Community
+          Gitter help rooms
+          Videos
+          City Meetups
+          Wiki
+          Forum
+          Additional Courses  -->
+                <label for="improvement">What would you like to see improved? (Check all that apply)</label><br>
+                <input type="checkbox-input" id="imporovement" name="frontEndProjects" value="frontEndProjects">
+                <label for="improvement">Front-end Projects</label><br>
+                <input type="checkbox-input" id="imporovement" name="backEndProjects" value="backEndProjects">
+                <label for="improvement">Back-end Projects</label><br>
+                <input type="checkbox-input" id="imporovement" name="dataVisualization" value="dataVisualization">
+                <label for="improvement">Data Visualization</label><br>
+                <input type="checkbox-input" id="imporovement" name="challenges" value="challenges">
+                <label for="improvement">Challenges</label><br>
+                <input type="checkbox-input" id="imporovement" name="openSourceCommunity" value="openSourceCommunity">
+                <label for="improvement">Open Source Community</label><br>
+                <input type="checkbox-input" id="imporovement" name="gitterHelpRooms" value="gitterHelpRooms">
+                <label for="improvement">Gitter help rooms</label><br>
+                <input type="checkbox-input" id="imporovement" name="videos" value="videos">
+                <label for="improvement">Videos</label><br>
+                <input type="checkbox-input" id="imporovement" name="cityMeetups" value="cityMeetups">
+                <label for="improvement">City Meetups</label><br>
+                <input type="checkbox-input" id="imporovement" name="wiki" value="wiki">
+                <label for="improvement">Wiki</label><br>
+                <input type="checkbox-input" id="imporovement" name="forum" value="forum">
+                <label for="improvement">Forum</label><br>
+                <input type="checkbox-input" id="imporovement" name="additionalCourses" value="additionalCourses">
+                <label for="improvement">Additional Courses</label><br>
+                <label for="suggesstions">Any comments or suggestions?</label><br>
+                <input type="textbox" id="suggestions" placeholder="enter your valuable comments here"><br>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </div>
