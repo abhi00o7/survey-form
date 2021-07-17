@@ -1,0 +1,112 @@
+ body {
+
+     color: white;
+     background-image: linear-gradient(290deg, rgba(0, 0, 0, .4), rgba(219, 255, 248, 1)), url("https://t.ipadizate.es/2020/08/iOS-14-promotional-gradients-iphone-wallpaper-ar72014-idownloadblog-1-320x693.jpeg");
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     margin-top: 100px;
+     text-align: center;
+ }
+
+ h1 {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400px;
+     font-size: 35px
+ }
+
+ p {
+     font-size: 20px;
+     line-height: 1.2em;
+ }
+
+ h1,p {
+     margin-top: 0.5rem;
+     margin-bottom: 0.3rem;
+     line-height: 1em;
+ }
+
+
+ #survey-form {
+     text-align: left;
+     padding: 50px;
+     border-radius: 2em;
+     width: 40%;
+     margin: auto;
+     margin-top: 30px;
+     background: rgba(0, 0, 0, 0.2);
+
+ }
+
+ .form-group {
+     padding: 10px;
+     font-size: 20px;
+     text-align: left;
+     line-height: 1em;
+
+ }
+
+ .form-control {
+     display: block;
+     font-size: 15px;
+     border: 0;
+     height: 2.6rem;
+     border-radius: 15px;
+     border: 2px solid rgba(255, 255, 255, 0.4);
+ }
+
+ input[type="checkbox"],
+ input[type="radio"] {
+     margin-right: 10px;
+
+ }
+
+ label {
+     color: var(--color-white);
+     font-weight: 500;
+     line-height: 1.6em;
+     margin-left: 1px;
+ }
+
+
+ select:focus,
+ textarea:focus,
+ input:focus {
+     outline: none;
+     border: 2px solid #F08080;
+ }
+
+ input[type="text"],
+ input[type="number"],
+ input[type="email"],
+ select,
+ textarea {
+     display: block;
+     padding: 10px;
+     width: 100%;
+     box-sizing: border-box;
+     border-radius: 15px;
+ }
+
+ textarea {
+     resize: vertical;
+     min-height: 100px;
+     max-height: 300px;
+ }
+
+ button {
+     padding: 10px;
+     width: 100%;
+     color: white;
+     background: #F08080;
+     border-radius: 15px;
+     border: 2px solid rgba(255, 255, 255, 0.4);
+ }
+
+
+ input[type="radio"],
+ input[type="checkbox"],
+ button:hover {
+     background: #fFA07A;
+     cursor: pointer;
+ }

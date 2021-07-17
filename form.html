@@ -1,17 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >Survey Form | A R C H Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form | A R C H Studio</title>
 </head>
+
 <body>
     <div class="main">
+        <div id="header">
+            <header>
+                <h1 id="title">ARCH Studio Channel Survey</h1>
+                <p id="description">Thank you for taking time to help improve our channel.</p>
+            </header>
+        </div>
+        <div class="form-group">
+            <form action="/surveyformAction.js" id="survey-form">
+                <label for="name" id="name-label">First Name</label><br>
+                <input type="text" name="first_name" id="name" placeholder="Enter your first name" required>
+                <label for="name" id="name-label">Last Name</label><br>
+                <input type="text" name="last_name" id="name" placeholder="Enter your last name" required>
+                <label for="email" id="email-label">Enter your email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="age" id="number-label">Enter your age</label>
+                <input type="number" id="number" name="age" placeholder="Enter your age" min="12" max="100">
+                <!-- dropdown -->
+                <label for="dropdown-label">Which option best describes your current role?</label><br>
+                <select name="role" id="dropdown">
+                    <option>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="fullTimeJob">Full time job</option>
+                    <option value="fullTimeLearner">Full time Learner</option>
+                    <option value="preferNotToSay">Prefer not to say</option>
+                </select><br>
+                <!-- radio buttons -->
+                <label for="recommend">Would you recommend our channel to a friend?</label><br>
+                <input type="radio" id="recommend" name="recommend" value="definitely">
+                <label for="definitely">Definitely</label>
+                <input type="radio" id="recommend" name="recommend" value="maybe">
+                <label for="Maybe">Maybe</label>
+                <input type="radio" id="recommend" name="recommend" value="notSure">
+                <label for="notSure">Not Sure</label><br>
+                <!-- checkboxes -->
+                <label for="improvement">What would you like to see improved? (Check all that apply)</label><br>
+                <input type="checkbox" id="imporovement" name="frontEndProjects" value="frontEndProjects">
+                <label for="improvement">Front-end Projects</label><br>
+                <input type="checkbox" id="imporovement" name="backEndProjects" value="backEndProjects">
+                <label for="improvement">Back-end Projects</label><br>
+                <input type="checkbox" id="imporovement" name="dataVisualization" value="dataVisualization">
+                <label for="improvement">Data Visualization</label><br>
+                <input type="checkbox" id="imporovement" name="challenges" value="challenges">
+                <label for="improvement">Challenges</label><br>
+                <input type="checkbox" id="imporovement" name="openSourceCommunity" value="openSourceCommunity">
+                <label for="improvement">Open Source Community</label><br>
+                <input type="checkbox" id="imporovement" name="gitterHelpRooms" value="gitterHelpRooms">
+                <label for="improvement">Gitter help rooms</label><br>
+                <input type="checkbox" id="imporovement" name="videos" value="videos">
+                <label for="improvement">Videos</label><br>
+                <input type="checkbox" id="imporovement" name="cityMeetups" value="cityMeetups">
+                <label for="improvement">City Meetups</label><br>
+                <input type="checkbox" id="imporovement" name="wiki" value="wiki">
+                <label for="improvement">Wiki</label><br>
+                <input type="checkbox" id="imporovement" name="forum" value="forum">
+                <label for="improvement">Forum</label><br>
+                <input type="checkbox" id="imporovement" name="additionalCourses" value="additionalCourses">
+                <!-- textarea -->
+                <label for="comments">Share your valuable comments:</label>
 
-        <h1 id="title">ARCH Studio Channel Survey</h1>
-        <p id="description">Thank you for taking time to help improve our channel.</p>
-        
+                <textarea id="comments" name="comments" rows="4" cols="33">
+                        It was a dark and stormy night...
+                </textarea>
+                <button class="btn btn-primary" id="submit" type="submit">submit</button>
+
+            </form>
+        </div>
     </div>
 </body>
+
 </html>
