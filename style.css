@@ -1,7 +1,9 @@
- body {
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Zen+Loop&display=swap');
 
-     color: white;
-     background-image: linear-gradient(290deg, rgba(0, 0, 0, .4), rgba(219, 255, 248, 1)), url("https://t.ipadizate.es/2020/08/iOS-14-promotional-gradients-iphone-wallpaper-ar72014-idownloadblog-1-320x693.jpeg");
+body {
+
+     color: rgb(255, 255, 255);
+     background-image: linear-gradient(290deg, rgba(241, 5, 5, 0.4), rgba(125, 22, 146, 0.788)), url("https://t.ipadizate.es/2020/08/iOS-14-promotional-gradients-iphone-wallpaper-ar72014-idownloadblog-1-320x693.jpeg");
      background-size: cover;
      background-attachment: fixed;
      background-repeat: no-repeat;
@@ -10,22 +12,30 @@
  }
 
  h1 {
-     font-family: 'Poppins', sans-serif;
-     font-weight: 400px;
-     font-size: 35px
+    font-family: 'Montserrat',
+    sans-serif;
+    font-weight: 400px;
+    font-size: 35px;
+    letter-spacing:2px;
  }
 
  p {
+     font-family: 'Montserrat',
+     sans-serif;
+     font-weight: 100;
      font-size: 20px;
-     line-height: 1.2em;
+     font-style: italic;
  }
 
  h1,p {
      margin-top: 0.5rem;
      margin-bottom: 0.3rem;
-     line-height: 1em;
+     line-height: 1.2em;
  }
 
+ #comment-label,#number-label,#email-label,#name-label{
+     font-weight: bold;
+ }
 
  #survey-form {
      text-align: left;
@@ -42,26 +52,21 @@
      padding: 10px;
      font-size: 20px;
      text-align: left;
-     line-height: 1em;
-
- }
-
- .form-control {
-     display: block;
-     font-size: 15px;
-     border: 0;
-     height: 2.6rem;
-     border-radius: 15px;
-     border: 2px solid rgba(255, 255, 255, 0.4);
+     line-height: 2em;
  }
 
  input[type="checkbox"],
  input[type="radio"] {
-     margin-right: 10px;
+     transform: scale(2);
+     margin:10px
 
  }
 
  label {
+     font-family: 'Montserrat',
+     sans-serif ;
+     text-shadow: #F08080;
+     font-weight: 950;
      color: var(--color-white);
      font-weight: 500;
      line-height: 1.6em;
@@ -84,14 +89,17 @@
      display: block;
      padding: 10px;
      width: 100%;
+     font-size: large;
      box-sizing: border-box;
      border-radius: 15px;
+     line-height:10px;
  }
 
  textarea {
      resize: vertical;
      min-height: 100px;
      max-height: 300px;
+     color:rgb(0, 0, 0)
  }
 
  button {
@@ -107,6 +115,6 @@
  input[type="radio"],
  input[type="checkbox"],
  button:hover {
-     background: #fFA07A;
+     background: #d63811;
      cursor: pointer;
  }

@@ -1,108 +1,83 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form | A R C H Studio</title>
 </head>
 
 <body>
-    <!-- 
-
-Hello Camper!
-
-Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
-
-- The freeCodeCamp Team 
-
--->
-
-    <div class="body">
-
-        <div id="title">
-            <h1>freeCodeCamp Survey Form</h1>
-            <p id="description">
-                Thank you for taking the time to help us improve our platform
-            </p>
+    <div class="main">
+        <div id="header">
+            <header>
+                <h1 id="title">ARCH Studio Channel Survey</h1>
+                <p id="description">Thank you for taking time to help improve our channel.</p>
+            </header>
         </div>
-        <div id="form">
-            <form action="#" id="survey-form">
-                <label for="name-label">Name</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="text" id="name" placeholder="Enter Your Name"><br>	&nbsp;	&nbsp;	&nbsp;
-                <label for="email-label">Email</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="email" id="email" placeholder="Enter Your Email"><br>	&nbsp;	&nbsp;	&nbsp;
-                <label for="age-label">Age(Optional)</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="number-label" id="age" placeholder="Enter Your age here" min="11" max="99"><br>	&nbsp;	&nbsp;	&nbsp;
-                <label for="dropdown-label">Which option best describes your current role?</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <select name="role" id="role">
+        <div class="form-group">
+            <form action="/surveyformAction.js" id="survey-form">
+                   
+                <label for="name" id="name-label">First Name</label><br>
+                <input type="text" name="first_name" id="name" placeholder="Enter your first name" required>
+                <label for="name" id="name-label">Last Name</label><br>
+                <input type="text" name="last_name" id="name" placeholder="Enter your last name" required>
+                <label for="email" id="email-label">Enter your email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="age" id="number-label">Enter your age</label>
+                <input type="number" id="number" name="age" placeholder="Enter your age" min="12" max="100">
+                <!-- dropdown -->
+                <label for="dropdown-label" id="comment-label">Which option best describes your current role?</label><br>
+                <select name="role" id="dropdown">
                     <option>Select current role</option>
                     <option value="student">Student</option>
                     <option value="fullTimeJob">Full time job</option>
                     <option value="fullTimeLearner">Full time Learner</option>
                     <option value="preferNotToSay">Prefer not to say</option>
-                    <option value="other">Other...</option>
-                </select><br>	&nbsp;	&nbsp;	&nbsp;
-                <!--       <select name="recommend" id="id"></select> -->
-                <label for="recommend">Would you recommend freeCodeCamp to a friend?</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="radio" id="recommend" name="recommend" value="definitely">
-                <label for="definitely">Definitely</label>
-                <input type="radio" id="recommend" name="recommend" value="maybe">
-                <label for="Maybe">Maybe</label>
-                <input type="radio" id="recommend" name="recommend" value="notSure">
-                <label for="notSure">Not Sure</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <label for="feature">What is your favorite feature of freeCodeCamp?</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <select name="feature" id="feature">
-                    <option>Select an option</option>
-                    <option value="challenges">Challenges</option>
-                    <option value="projects">Projects</option>
-                    <option value="community">Community</option>
-                    <option value="openSource">Open Source</option>
-                </select><br>	&nbsp;	&nbsp;	&nbsp;
-                <!--      What would you like to see improved? (Check all that apply)
+                </select><br>
 
-          Front-end Projects
-          Back-end Projects
-          Data Visualization
-          Challenges
-          Open Source Community
-          Gitter help rooms
-          Videos
-          City Meetups
-          Wiki
-          Forum
-          Additional Courses  -->
-                <label for="improvement">What would you like to see improved? (Check all that apply)</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="checkbox-input" id="imporovement" name="frontEndProjects" value="frontEndProjects">
-                <label for="improvement">Front-end Projects</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="checkbox-input" id="imporovement" name="backEndProjects" value="backEndProjects">
-                <label for="improvement">Back-end Projects</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="checkbox-input" id="imporovement" name="dataVisualization" value="dataVisualization">
-                <label for="improvement">Data Visualization</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="checkbox-input" id="imporovement" name="challenges" value="challenges">
-                <label for="improvement">Challenges</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="checkbox-input" id="imporovement" name="openSourceCommunity" value="openSourceCommunity">
-                <label for="improvement">Open Source Community</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="checkbox-input" id="imporovement" name="gitterHelpRooms" value="gitterHelpRooms">
-                <label for="improvement">Gitter help rooms</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="checkbox-input" id="imporovement" name="videos" value="videos">
-                <label for="improvement">Videos</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="checkbox-input" id="imporovement" name="cityMeetups" value="cityMeetups">
-                <label for="improvement">City Meetups</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="checkbox-input" id="imporovement" name="wiki" value="wiki">
-                <label for="improvement">Wiki</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="checkbox-input" id="imporovement" name="forum" value="forum">
-                <label for="improvement">Forum</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="checkbox-input" id="imporovement" name="additionalCourses" value="additionalCourses">
-                <label for="improvement">Additional Courses</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <label for="suggesstions">Any comments or suggestions?</label><br>	&nbsp;	&nbsp;	&nbsp;
-                <input type="textbox" id="suggestions" placeholder="enter your valuable comments here"><br>	&nbsp;	&nbsp;	&nbsp;
-                <button type="submit">Submit</button>
+                <!-- radio buttons -->
+                <label for="recommend" id="comment-label">Would you recommend our channel to a friend?</label><br>
+                <input type="radio" id="recommend" name="recommend" value="definitely">
+                <label for="definitely">Definitely</label><br>
+                <input type="radio" id="recommend" name="recommend" value="maybe">
+                <label for="Maybe">Maybe</label><br>
+                <input type="radio" id="recommend" name="recommend" value="notSure">
+                <label for="notSure">Not Sure</label><br><br>
+                <!-- checkboxes -->
+                <label for="improvement" id="comment-label">What would you like to see improved? (Check all that apply)</label><br>
+                <input type="checkbox" id="imporovement" class="imporovement" name="frontEndProjects" value="frontEndProjects">
+                <label for="improvement">Front-end Projects</label><br>
+                <input type="checkbox" id="imporovement" class="imporovement" name="backEndProjects" value="backEndProjects">
+                <label for="improvement">Back-end Projects</label><br>
+                <input type="checkbox" id="imporovement" class="imporovement" name="dataVisualization" value="dataVisualization">
+                <label for="improvement">Data Visualization</label><br>
+                <input type="checkbox" id="imporovement" class="imporovement" name="challenges" value="challenges">
+                <label for="improvement">Challenges</label><br>
+                <input type="checkbox" id="imporovement" class="imporovement" name="openSourceCommunity" value="openSourceCommunity">
+                <label for="improvement">Open Source Community</label><br>
+                <input type="checkbox" id="imporovement" class="imporovement" name="gitterHelpRooms" value="gitterHelpRooms">
+                <label for="improvement">Gitter help rooms</label><br>
+                <input type="checkbox" id="imporovement" class="imporovement" name="videos" value="videos">
+                <label for="improvement">Videos</label><br>
+                <input type="checkbox" id="imporovement" class="imporovement" name="cityMeetups" value="cityMeetups">
+                <label for="improvement">City Meetups</label><br>
+                <input type="checkbox" id="imporovement" class="imporovement" name="wiki" value="wiki">
+                <label for="improvement">Wiki</label><br>
+                <input type="checkbox" id="imporovement" class="imporovement" name="forum" value="forum">
+                <label for="improvement">Forum</label><br>
+                <!-- textarea -->
+                <label for="comments" id="comment-label" >Share your suggestions for upcoming videos.</label>
+
+                <textarea id="comments" class="form-control" name="comments" rows="4" cols="33" placeholder="Comment box">
+                </textarea><br>
+                <button  id="submit" type="submit">submit</button>
+
             </form>
         </div>
     </div>
-
 </body>
 
 </html>
