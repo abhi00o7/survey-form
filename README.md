@@ -1,3 +1,4 @@
+![survey-form-screen](https://user-images.githubusercontent.com/31090188/126060111-26a26060-05af-4ee6-8824-94b1af30244a.jpg)
 # survey-form
 
 freeCodeCamp Survey Form for the Responsive Web Certification Course
