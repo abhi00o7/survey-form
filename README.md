@@ -3,7 +3,7 @@
 
 freeCodeCamp Survey Form for the Responsive Web Certification Course
 
-## You can build view this project working live on >>>> [codepen](https://codepen.io/abhi00o7/pen/OJmpoNa) <<<< 
+## You can view this project working live on >>>> [codepen](https://codepen.io/abhi00o7/pen/OJmpoNa) <<<< 
 
 **Objective:** Build a [CodePen.io](https://codepen.io) app that is functionally similar to this: [https://codepen.io/freeCodeCamp/full/VPaoNP](https://codepen.io/freeCodeCamp/full/VPaoNP).
 
